@@ -6,8 +6,8 @@ import { fetchTodosSuccess, fetchTodosError, removeTodoSuccess, updateTodoSucces
 
 export const fetchTodos = () => async (dispatch: AppDispatch) => {
   try {
-    const instance = apiInstance()
-    const response = await instance.get('todos/user/9')
+    const api = apiInstance()
+    const response = await api.get('todos/user/9')
     const tasks: ITodos[] = await response.data
     dispatch(fetchTodosSuccess(tasks))
   } catch (error) {
