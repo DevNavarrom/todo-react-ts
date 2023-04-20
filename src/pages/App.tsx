@@ -1,10 +1,10 @@
 import { useEffect } from 'react'
-import Todos from './components/Todos'
-import type { TodoCompleted, TodoId } from './utils/types'
-import { useAppSelector, useAppDispatch } from './store/store'
-import { fetchTodos, removeTodo, updateTodo } from './store/features/Todos/thunks'
+import Todos from '../components/Todos'
+import type { TodoCompleted, TodoId } from '../utils/types'
+import { useAppSelector, useAppDispatch } from '../store/store'
+import { fetchTodos, removeTodo, updateTodo } from '../store/features/Todos/thunks'
 
-const App = (): JSX.Element => {
+export const App = (): JSX.Element => {
   const todos = useAppSelector(state => state.todos.todos)
   const dispatch = useAppDispatch()
 
@@ -39,5 +39,3 @@ const App = (): JSX.Element => {
     </>
   )
 }
-
-export default App
