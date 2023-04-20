@@ -1,4 +1,4 @@
 # todo-react-ts
 Task list using React and Typescript
 
-![Alt text](https://drive.google.com/file/d/18OIIgmsO56LpAMZ6B1d-uiBe-gGMJQuj/view?usp=share_link)
+![Alt text](https://raw.githubusercontent.com/DevNavarrom/todo-react-ts/main/public/Screenshot.png)
